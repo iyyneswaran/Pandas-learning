@@ -10,8 +10,8 @@ data = {
 }
 
 df = pd.DataFrame(data)
-print(df)
 
-# head
-print(df.head(2)) #first two
-print(df.tail(1)) #last one
+print(df.iloc[2:5])
+
+print(df.loc[1:3, ['Age', 'Department']])
+print(df.loc[1:3])
