@@ -11,13 +11,4 @@ data = {
 
 df = pd.DataFrame(data)
 
-# iloc
-print(df.iloc[2:5])
-print(df.iloc[1:3, :2])
-
-# loc 
-print(df.loc[1:3, ['Age', 'Department']])
-print(df.loc[1:3])
-
-# accessing multiple rows
-print(df[['Name', 'Salary']])
+df.rename(columns={'Department':'Dept'}, inplace=True)

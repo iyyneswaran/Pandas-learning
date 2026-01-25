@@ -11,13 +11,9 @@ data = {
 
 df = pd.DataFrame(data)
 
-# iloc
-print(df.iloc[2:5])
-print(df.iloc[1:3, :2])
+print("Original DataFrame:\n", df, sep="\n")
 
-# loc 
-print(df.loc[1:3, ['Age', 'Department']])
-print(df.loc[1:3])
+print("\nDataFrame after adding new column 'Promoted Salary':\n")
 
-# accessing multiple rows
-print(df[['Name', 'Salary']])
+df['Promoted Salary'] = df['Salary'] + 15000
+print(df)

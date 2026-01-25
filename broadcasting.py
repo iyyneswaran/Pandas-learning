@@ -11,13 +11,10 @@ data = {
 
 df = pd.DataFrame(data)
 
-# iloc
-print(df.iloc[2:5])
-print(df.iloc[1:3, :2])
+# broadcasting
 
-# loc 
-print(df.loc[1:3, ['Age', 'Department']])
-print(df.loc[1:3])
+# Example 1: I need to increase the salary of everyone by 10000
 
-# accessing multiple rows
-print(df[['Name', 'Salary']])
+df['Salary'] = df['Salary'] + 10000
+print(df['Salary'])
+

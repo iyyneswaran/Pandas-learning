@@ -14,11 +14,11 @@ fruit_protein = {
 }
 
 s2 = pd.Series(fruit_protein, name='Protein')
-# print(s2)
+print(s2)
 
 
 # conditional selection
-# print(s2>1)
+print(s2>1)
 #returns true or false
 
 # logical operators

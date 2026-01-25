@@ -10,14 +10,17 @@ data = {
 }
 
 df = pd.DataFrame(data)
+print(df)
 
-# iloc
-print(df.iloc[2:5])
-print(df.iloc[1:3, :2])
+df.drop('Age', axis=1, inplace=True) #erase the table in place, when inplcae = True
+print(df)
 
-# loc 
-print(df.loc[1:3, ['Age', 'Department']])
-print(df.loc[1:3])
 
-# accessing multiple rows
-print(df[['Name', 'Salary']])
+# to find the shape of the dataframe:
+print(df.shape)
+
+# info
+print(df.info())
+
+# describe: to get statistical summary
+print(df.describe())

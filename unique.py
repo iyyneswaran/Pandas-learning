@@ -11,13 +11,11 @@ data = {
 
 df = pd.DataFrame(data)
 
-# iloc
-print(df.iloc[2:5])
-print(df.iloc[1:3, :2])
 
-# loc 
-print(df.loc[1:3, ['Age', 'Department']])
-print(df.loc[1:3])
+# to check the unique values
 
-# accessing multiple rows
-print(df[['Name', 'Salary']])
+unique_Age = df['Age'].unique()
+print(unique_Age)
+
+# to count the unique values
+print(df['Age'].value_counts())
